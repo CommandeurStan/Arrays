@@ -19,7 +19,7 @@ function sumOfTripledEvens(array) {
 }
 console.log(sumOfTripledEvens(arr)); */
 
-function camelize(str) {
+/* function camelize(str) {
   return str
   //creates an array of the input
     .split('-')
@@ -28,11 +28,18 @@ function camelize(str) {
   //joins the array together to a string.
     .join('');
 
-}
-      
-
-   
+} 
 
 console.log(camelize("background-color") == 'backgroundColor');
 console.log(camelize("list-style-image") == 'listStyleImage');
-console.log(camelize("-webkit-transition") == 'WebkitTransition');
+console.log(camelize("-webkit-transition") == 'WebkitTransition'); */
+
+const array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+function filterRange(arr, a, b) {
+  //creates a filtered array in between the to given arguments a and b. To reverse swap the operators 'bigger than' and 'lesser then'
+    const filtered = arr.filter(num => (num >= a && num <= b));
+    console.log(filtered);
+}
+
+console.log(filterRange(array, 5, 10));
