@@ -19,9 +19,9 @@ function sumOfTripledEvens(array) {
   
 }
 console.log(sumOfTripledEvens(arr)); 
-*/
 
-/* 
+
+
 function camelize(str) {
   return str
   //creates an array of the input
@@ -36,9 +36,9 @@ function camelize(str) {
 console.log(camelize("background-color") == 'backgroundColor');
 console.log(camelize("list-style-image") == 'listStyleImage');
 console.log(camelize("-webkit-transition") == 'WebkitTransition'); 
-*/
 
-/*
+
+
 const array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 
 function filterRange(arr, a, b) {
@@ -48,21 +48,22 @@ function filterRange(arr, a, b) {
 }
 
 console.log(filterRange(array, 5, 10));
-*/
 
-/*
+
+
 const array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 
 let reverseArray = array.reverse();
 console.log(reverseArray);
-*/
 
-/*
+
+
 const array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 // reverses array in descending order
 let sorted = array.sort((a, b) => b - a);
 console.log(sorted);
 */
+
 
 
 
