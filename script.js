@@ -20,17 +20,19 @@ function sumOfTripledEvens(array) {
 console.log(sumOfTripledEvens(arr)); */
 
 function camelize(str) {
-  const array = str.split('-')
-  const capBegin = array.findLast(word => word.length - 1)
-  const capWord = capBegin[0].toUpperCase() + capBegin.slice(1)
-  return array.splice()+capWord;
-  // return capBegin;
-      
+  return str
+  //creates an array of the input
+    .split('-')
+  //iterates over the array and asks if index = 0, leaves it at the word, else capatalize first word of next object/word and parses rest of the word using slice
+    .map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1))
+  //joins the array together to a string.
+    .join('');
+
 }
+      
+
    
 
-console.log(camelize("background-color"));
 console.log(camelize("background-color") == 'backgroundColor');
-console.log(camelize("list-style-image"));
 console.log(camelize("list-style-image") == 'listStyleImage');
-// console.log(camelize("-webkit-transition") == 'WebkitTransition');
+console.log(camelize("-webkit-transition") == 'WebkitTransition');
